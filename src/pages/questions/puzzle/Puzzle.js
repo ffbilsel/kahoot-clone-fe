@@ -1,18 +1,18 @@
 import styles from "./Puzzle.module.css";
 import PuzzleAnswer from "./PuzzleAnswer";
-import {Card, Grid} from "@mui/material";
+import {Button, Card, Grid, TextField} from "@mui/material";
 
 function Puzzle() {
     return (
         <div className={styles.mainContainer}>
             <Card variant={"outlined"} className={styles.question}>
-                <h2 className={styles.title}>Start typing your question</h2>
+                <TextField className={styles.title} placeholder={"Start typing your question"} sx={{ width: 0.8}}/>
             </Card>
             <Grid container  alignItems={"center"} justifyContent={"space-between"}>
                 <Grid item xs={6} >
                     <Card className={styles.media}>
                         <div className={styles.add}>
-                            <Card sx={{ width: "30px", height: "30px" }} className={styles.addSign} >+</Card>
+                            <Button variant={"outlined"} component={"label"} className={styles.addSign} >+<input type={"file"} hidden className={styles.inputFile}/></Button>
                         </div>
                     </Card>
                 </Grid>

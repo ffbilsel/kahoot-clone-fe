@@ -12,6 +12,8 @@ import {useDispatch, useSelector} from "react-redux";
 function QuestionTemplate() {
     const dispatch = useDispatch();
     const questionType = useSelector(state => state.type);
+    const timeLimit = useSelector(state => state.timeLimit);
+    const points = useSelector(state => state.points);
 
     let component;
     let [nofQuestions, setNofQuestions] = useState(1);
@@ -42,6 +44,14 @@ function QuestionTemplate() {
         dispatch({type : event.target.value});
     }
 
+    const handleTimeLimit = (event) => {
+        dispatch({type : event.target.value});
+    }
+
+    const handlePoints = (event) => {
+        dispatch({type : event.target.value});
+    }
+
     return (
         <div className={styles.center}>
             <div className={styles.leftSideBar}>
@@ -62,18 +72,18 @@ function QuestionTemplate() {
                     <MenuItem value={"Drop Pin"}>Drop Pin</MenuItem>
                 </Select>
                 <label>Time limit</label>
-                <Select sx={{ width: 1 , height: '25%' }} value={20} >
-                    <MenuItem value={5}>5 seconds</MenuItem>
-                    <MenuItem value={10}>10 seconds</MenuItem>
-                    <MenuItem value={20}>20 seconds</MenuItem>
-                    <MenuItem value={30}>30 seconds</MenuItem>
-                    <MenuItem value={60}>1 minute</MenuItem>
-                    <MenuItem value={90}>1 minute 30 seconds</MenuItem>
-                    <MenuItem value={180}>2 minutes</MenuItem>
-                    <MenuItem value={240}>4 minutes</MenuItem>
+                <Select sx={{ width: 1 , height: '25%' }} value={timeLimit} onChange={handleTimeLimit} >
+                    <MenuItem value={"5"}>5 seconds</MenuItem>
+                    <MenuItem value={"10"}>10 seconds</MenuItem>
+                    <MenuItem value={"20"}>20 seconds</MenuItem>
+                    <MenuItem value={"30"}>30 seconds</MenuItem>
+                    <MenuItem value={"60"}>1 minute</MenuItem>
+                    <MenuItem value={"90"}>1 minute 30 seconds</MenuItem>
+                    <MenuItem value={"120"}>2 minutes</MenuItem>
+                    <MenuItem value={"240"}>4 minutes</MenuItem>
                 </Select>
                 <label>Points</label>
-                <Select sx={{ width: 1 , height: '25%' }} value={"standard"} >
+                <Select sx={{ width: 1 , height: '25%' }} value={points} onChange={handlePoints} >
                     <MenuItem value={"standard"}>Standard</MenuItem>
                     <MenuItem value={"double"}>Double Points</MenuItem>
                     <MenuItem value={"no"}>No points</MenuItem>

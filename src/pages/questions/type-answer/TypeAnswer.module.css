@@ -9,15 +9,3 @@
     width: 60%;
     text-align: center;
 }
-
-.sub {
-    display: inline-block;
-    width: 31%;
-    text-align: center;
-    margin-right: 0.5rem;
-    margin-top: 2rem;
-}
-
-.end {
-    margin-right: 0;
-}

@@ -15,9 +15,9 @@ function Quiz() {
                 <Answer/>
                 <Answer/>
             </Grid>
-            <Card className={styles.addMore}>
-                <p>Add more Answers</p>
-            </Card>
+            {/*<Card className={styles.addMore}>*/}
+            {/*    <p>Add more Answers</p>*/}
+            {/*</Card>*/}
         </div>
     );
 }
