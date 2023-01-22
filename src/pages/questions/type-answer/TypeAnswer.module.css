@@ -5,7 +5,6 @@
 }
 
 .main {
-    margin: 4.5rem auto 0 auto;
-    width: 60%;
-    text-align: center;
+    margin-top: 4.5rem;
+    width: 100%;
 }

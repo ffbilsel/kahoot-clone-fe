@@ -23,12 +23,3 @@
     height: 25rem;
     transform: translateY(50%);
 }
-
-.addSign {
-    margin: auto;
-}
-
-.inputFile {
-    width: 100%;
-    height: 100%;
-}

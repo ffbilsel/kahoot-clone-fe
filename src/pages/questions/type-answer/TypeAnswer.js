@@ -11,13 +11,13 @@ function TypeAnswer() {
                 <TypeAnswerTemplate ></TypeAnswerTemplate>
             </Grid>
             <Grid container justifyContent={"center"} spacing={1}>
-                <Grid item className={styles.sub} xs={3}>
+                <Grid item xs={3}>
                     <TypeAnswerTemplate></TypeAnswerTemplate>
                 </Grid>
-                <Grid item className={styles.sub} xs={3}>
+                <Grid item xs={3}>
                     <TypeAnswerTemplate></TypeAnswerTemplate>
                 </Grid>
-                <Grid item className={`${styles.sub} ${styles.end}`} xs={3}>
+                <Grid item xs={3}>
                     <TypeAnswerTemplate></TypeAnswerTemplate>
                 </Grid>
             </Grid>

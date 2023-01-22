@@ -12,7 +12,7 @@ function Puzzle() {
                 <Grid item xs={6} >
                     <Card className={styles.media}>
                         <div className={styles.add}>
-                            <Button variant={"outlined"} component={"label"} className={styles.addSign} >+<input type={"file"} hidden className={styles.inputFile}/></Button>
+                            <Button variant={"outlined"} component={"label"} >+<input type={"file"} hidden/></Button>
                         </div>
                     </Card>
                 </Grid>
