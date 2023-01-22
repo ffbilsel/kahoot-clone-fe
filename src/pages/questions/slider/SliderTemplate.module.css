@@ -1,0 +1,21 @@
+.mainContainer {
+    margin-top: 4.5rem;
+}
+
+.containerFirst {
+    display: inline-block;
+    margin-top: 4.5rem;
+}
+
+.containerFirst label{
+    display: block;
+}
+
+.containerSecond {
+    display: inline-block;
+    margin-top: 4.5rem;
+}
+
+.containerSecond label{
+    display: block;
+}

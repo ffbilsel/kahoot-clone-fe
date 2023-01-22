@@ -1,0 +1,14 @@
+.mainContainer {
+    float: left;
+    display: inline-block;
+}
+
+.addMore {
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.upperPart {
+    margin-bottom: 2rem;
+}

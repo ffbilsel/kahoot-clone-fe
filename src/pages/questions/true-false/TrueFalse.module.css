@@ -1,0 +1,9 @@
+.mainContainer {
+    float: left;
+    width: 100%;
+}
+
+.innerContainer {
+    margin-top: 4.5rem;
+
+}

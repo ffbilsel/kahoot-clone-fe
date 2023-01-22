@@ -1,0 +1,12 @@
+.mainContainer {
+    height: 4rem;
+    margin-bottom: 2.5rem !important;
+}
+
+.symbol {
+    display: inline-block;
+    height: 100%;
+    width: 2rem;
+    background-color: red;
+    border-radius: 3px;
+}

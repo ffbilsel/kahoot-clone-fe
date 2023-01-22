@@ -1,0 +1,48 @@
+* {
+    font-weight: bold;
+}
+
+.leftSideBar {
+    width: 15%;
+    display: inline-block;
+    float: left;
+}
+
+.leftSideBar button{
+    display: inline-block;
+    box-shadow: 0 3px black;
+    font-size: 12px;
+    width: 60%;
+    height: 40px;
+}
+
+.rightSideBar {
+    margin-left: 4rem;
+    float: left;
+    width: 20%;
+    display: inline-block;
+}
+
+.rightSideBar button, .rightSideBar select, .rightSideBar label{
+    display: inline-block;
+    width: 100%;
+}
+
+label {
+    margin: 1rem 0;
+}
+.center {
+    padding: 4rem 4rem 0 4rem;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    display: inline-block;
+    float: left;
+    width: 60%;
+    margin: 0 auto;
+    background: url("./theme.webp");
+    border-radius: 5px;
+    height: 100%;
+}

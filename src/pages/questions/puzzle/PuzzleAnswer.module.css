@@ -1,0 +1,7 @@
+.symbol {
+    display: inline-block;
+    height: 4rem;
+    width: 2rem;
+    background-color: red;
+    border-radius: 3px;
+}

@@ -1,0 +1,29 @@
+.title {
+    margin: 0;
+    color: grey;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.question {
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    padding: 1rem 0;
+    width: 80%;
+}
+
+.media {
+    margin: 0 auto;
+    backdrop-filter: blur(6px);
+    width: 60%;
+}
+
+.add {
+    text-align: center;
+    height: 25rem;
+    transform: translateY(50%);
+}
+
+.addSign {
+    margin: auto;
+}
